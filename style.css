@@ -1,0 +1,163 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #0044ffcc;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 700;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+header nav button {
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: #0044ffcc;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.settings button, .settings select {
+    height: 49.55px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    outline: 2px solid;
+    transition: transform 0.2s;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+header nav a:hover, header nav button:hover, .settings button:hover, .settings select:hover, .cell:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#totalRound {
+    height: 50px;
+    font-weight: 1000;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #0044ffcc;
+    color: white;
+    font-weight: 1000;
+    font-size: 3em;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+#totalTimer {
+    margin: auto;
+    height: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+#progress {
+    height: 100%;
+    border-radius: 5px;
+    background-color: limegreen;
+    transition: width 0.1s linear;
+    position: absolute;
+    width: 0;
+    left: 0;
+    top: 0;
+}
+
+#highscore {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.dark-mode header {
+    background-color: #494949;
+}
+
+.dark-mode header nav button {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.dark-mode .cell {
+    background-color: #494949;
+}
+
+.menu-btn {
+    margin-top: 20px;
+}
