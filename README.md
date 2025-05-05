@@ -1,4 +1,4 @@
-# fabeysn7.github.io
+# fabeysn.github.io
 A simple game where you must memorize numeric sequences.
 
-Website: https://fabeysn7.github.io/
+Website: https://fabeysn.github.io/
